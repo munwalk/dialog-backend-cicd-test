@@ -91,3 +91,7 @@ google:
     uri: ${GOOGLE_REDIRECT_URI}
   api:
     calendar-url: ${GOOGLE_API_CALENDAR_URL}
+  calendar:
+    link:
+      redirect:
+        uri: ${GOOGLE_CALENDAR_LINK_REDIRECT_URI}

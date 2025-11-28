@@ -42,7 +42,8 @@ public class GoogleAuthService {
     @Value("${google.client.secret}")
     private String clientSecret;
 
-    @Value("${google.redirect.uri}")
+    // [수정] 캘린더 연동용 별도 redirect URI 사용
+    @Value("${google.calendar.link.redirect.uri}")
     private String redirectUri;
 
     private static final String SCOPE = "https://www.googleapis.com/auth/calendar.events";
