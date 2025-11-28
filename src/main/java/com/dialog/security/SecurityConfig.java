@@ -137,9 +137,11 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(Arrays.asList(
             "http://localhost:5500",
             "http://127.0.0.1:5500",
-            "http://dialogai.duckdns.org",
-            "https://dialogai.duckdns.org",
-            "http://dialogai.duckdns.org:5500"
+            // "http://dialogai.duckdns.org",
+            // "https://dialogai.duckdns.org",
+            // "http://dialogai.duckdns.org:5500"
+            "http://dialogai.ddns.net",
+            "https://dialogai.ddns.net"
         ));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
         configuration.setAllowedHeaders(Arrays.asList("*"));

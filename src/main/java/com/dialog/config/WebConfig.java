@@ -12,9 +12,11 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedOrigins(
                         "http://localhost:5500",      // 로컬 테스트용
                         "http://127.0.0.1:5500",      // 로컬 테스트용
-                        "http://dialogai.duckdns.org",      // 배포된 프론트엔드 도메인 (HTTP)
-                        "https://dialogai.duckdns.org",     // 혹시 HTTPS를 쓴다면 필수
-                        "http://dialogai.duckdns.org:5500"  // 만약 배포 후에도 5500 포트를 쓴다면
+                        // "http://dialogai.duckdns.org",      // 배포된 프론트엔드 도메인 (HTTP)
+                        // "https://dialogai.duckdns.org",     // 혹시 HTTPS를 쓴다면 필수
+                        // "http://dialogai.duckdns.org:5500"  // 만약 배포 후에도 5500 포트를 쓴다면
+                        "http://dialogai.ddns.net",
+                        "https://dialogai.ddns.net"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS") // "*" 대신 명시하는 것이 보안상 좋음
                 .allowedHeaders("*")
